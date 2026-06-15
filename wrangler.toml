@@ -1,0 +1,10 @@
+# Forte の公開静的ページ（プライバシーポリシー・利用規約等）を配信する Worker。
+# 公開ドメイン: https://static.forte.inc/<product>/...
+# 配信対象は site/ のみ（.git や設定ファイルが絶対に混ざらないようディレクトリを分離）。
+name = "forte-static"
+compatibility_date = "2024-09-02"
+workers_dev = false      # *.workers.dev では公開しない（static.forte.inc のみ）
+preview_urls = false
+
+[assets]
+directory = "site"
