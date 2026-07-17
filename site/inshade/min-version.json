@@ -1,11 +1,11 @@
 {
-  "_comment": "【検証中・一時設定】強制アップデート画面の実地確認のため ios.minBuild を 10 にしている（TestFlight の build 9 をブロックして画面を出す）。確認が終わったら必ず 0 に戻すこと。アプリはまだ未公開でテスターはオーナーのみのため影響は閉じている。",
+  "_comment": "inShade の強制アップデート判定。アプリは起動時にこれを読み、自分の版が下回っていたら更新画面を出す。0 = 誰もブロックしない。上げるときは、そのビルド未満を全部締め出すことを理解した上で慎重に。アプリ側は fail-open（この JSON が壊れている・届かない・値が異常なら素通り）。",
   "ios": {
-    "_comment": "CFBundleVersion（App Store の build 番号）と比較する。検証後は 0 に戻す。",
-    "minBuild": 10
+    "_comment": "CFBundleVersion（App Store の build 番号）と比較する。",
+    "minBuild": 0
   },
   "android": {
-    "_comment": "versionCode と比較する。0 = 誰もブロックしない。",
+    "_comment": "versionCode と比較する。",
     "minVersionCode": 0
   }
 }
