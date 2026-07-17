@@ -1,6 +1,14 @@
 # Forte の公開静的ページ（プライバシーポリシー・利用規約等）を配信する Worker。
 # 公開ドメイン: https://static.forte.inc/<product>/...
 # 配信対象は site/ のみ（.git や設定ファイルが絶対に混ざらないようディレクトリを分離）。
+#
+# ⚠️ デプロイは「main に push するだけ」。**`npx wrangler deploy` を手元から叩かないこと。**
+#   本物の forte-static は「Hirono@forte.inc's Account」(9b86416d9ffa348446df5967fd9bf1d1) にあり
+#   static.forte.inc が紐付いている。一方ローカルの wrangler CLI は hajiming@gmail.com の
+#   「hajipion」アカウントにログインしていることがあり、その場合は**別アカウントの同名ワーカー
+#   （ドメイン未紐付けの分身）へ配信され、本番は一切変わらないのに成功したように見える**。
+#   見分け方は "No targets deployed for forte-static"（＝ドメイン未紐付け）。詳細は README.md。
+#   このファイルは Workers Builds 側のビルド設定として使われる（手動 deploy 用ではない）。
 name = "forte-static"
 compatibility_date = "2024-09-02"
 workers_dev = false      # *.workers.dev では公開しない（static.forte.inc のみ）
