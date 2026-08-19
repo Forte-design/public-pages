@@ -13,6 +13,7 @@ Forte の公開静的ページ（プライバシーポリシー・利用規約�
 | `site/inshade/privacy-policy.html` | `https://static.forte.inc/inshade/privacy-policy.html` |
 | `site/inshade/terms.html` | `https://static.forte.inc/inshade/terms.html` |
 | `site/sleep-log/privacy-policy.html` | `https://static.forte.inc/sleep-log/privacy-policy.html` |
+| `site/blur/privacy-policy.html` | `https://static.forte.inc/blur/privacy-policy.html` |
 | `site/privacy-policy.html` | `https://static.forte.inc/privacy-policy.html`（汎用・後方互換） |
 
 英語版は `*.en.html`。
