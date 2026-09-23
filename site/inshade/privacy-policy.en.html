@@ -18,7 +18,7 @@
 <body>
 <p class="nav"><a href="privacy-policy.html">日本語</a> ・ <a href="terms.en.html">Terms of Service</a></p>
 <h1>Privacy Policy (inShade)</h1>
-<p class="updated">Last updated: June 15, 2026</p>
+<p class="updated">Last updated: September 23, 2026</p>
 
 <p>Forte, Inc. ("we") sets out how personal information and data are handled in the iOS / Android app "inShade" (the "App").</p>
 
@@ -41,11 +41,27 @@
 <ul>
   <li>Apple (map display and place search / in-app purchases)</li>
   <li>Google (map display and place search / advertising via Google AdMob)</li>
-  <li>Cloudflare (delivery of shade data)</li>
+  <li>Cloudflare (delivery of shade data / relaying feedback)</li>
+  <li>Google Firebase (usage measurement and crash reporting)</li>
+  <li>Slack (storage of feedback)</li>
 </ul>
 
+<h2>Feedback and Bug Reports</h2>
+<p>Information is sent to us only when you submit it yourself from "Feedback / Bug report" in the app. <strong>Nothing is sent unless you send it.</strong></p>
+<ul>
+  <li>The message you type and the category you pick (request / bug / other)</li>
+  <li>If "Attach device info" is on: app version, OS version, device model and locale. <strong>You can turn this off on the send screen.</strong></li>
+</ul>
+<p>Your location, search terms and routes are never included. We do not ask you for your name, email address or any other contact details (if you type them into the message, they are sent as part of it).</p>
+<p>Submissions go to a relay server we operate (Cloudflare Workers) and from there to our internal messaging tool (Slack). They are used only to read your feedback and investigate bugs — never for advertising or tracking — and are not shared with third parties. We keep them for at most one year and delete them once they are no longer needed. To request deletion, contact us at the address below.</p>
+
 <h2>Analytics and Crash Reporting</h2>
-<p>As of the last updated date of this policy, we do not use any first-party analytics or crash reporting. If we introduce such tools in the future, we will update this policy and do so in a privacy-conscious manner.</p>
+<p>We use Google Firebase (Analytics and Crashlytics) to measure usage and crashes so we can improve the app.</p>
+<ul>
+  <li>We send <strong>only the event type and non-personal labels for that type</strong> (for example: search opened, route shown, whether you picked the shaded or the shortest route). <strong>Search terms, coordinates and destinations are never sent.</strong></li>
+  <li>Collection starts <strong>only after advertising consent (UMP) has been obtained</strong>. Nothing is measured before that.</li>
+  <li>It does not rely on the advertising identifier (IDFA).</li>
+</ul>
 
 <h2>Regional Handling (GDPR / CCPA, etc.)</h2>
 <p>For users in the EEA and the UK, we obtain consent for advertising through a consent management platform (UMP). Because the App has no accounts, we do not build cross-site tracking profiles. To exercise data rights under the laws of your region, please contact us using the address below.</p>
