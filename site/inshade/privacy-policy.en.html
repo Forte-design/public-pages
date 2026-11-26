@@ -18,7 +18,7 @@
 <body>
 <p class="nav"><a href="privacy-policy.html">日本語</a> ・ <a href="terms.en.html">Terms of Service</a></p>
 <h1>Privacy Policy (inShade)</h1>
-<p class="updated">Last updated: September 23, 2026</p>
+<p class="updated">Last updated: November 26, 2026</p>
 
 <p>Forte, Inc. ("we") sets out how personal information and data are handled in the iOS / Android app "inShade" (the "App").</p>
 
@@ -50,10 +50,12 @@
 <p>Information is sent to us only when you submit it yourself from "Feedback / Bug report" in the app. <strong>Nothing is sent unless you send it.</strong></p>
 <ul>
   <li>The message you type and the category you pick (request / bug / other)</li>
+  <li>Only if you enter one: your email address (optional; used only to reply to you)</li>
+  <li>Only if you attach them: the photos you choose (optional, up to 5). They are sent as the original files, so they include any metadata the photos carry, such as the date taken and location</li>
   <li>If "Attach device info" is on: app version, OS version, device model and locale. <strong>You can turn this off on the send screen.</strong></li>
 </ul>
-<p>Your location, search terms and routes are never included. We do not ask you for your name, email address or any other contact details (if you type them into the message, they are sent as part of it).</p>
-<p>Submissions go to a relay server we operate (Cloudflare Workers) and from there to our internal messaging tool (Slack). They are used only to read your feedback and investigate bugs — never for advertising or tracking — and are not shared with third parties. We keep them for at most one year and delete them once they are no longer needed. To request deletion, contact us at the address below.</p>
+<p>The app's location, search terms and routes are never included (except for metadata in photos you attach yourself).</p>
+<p>Submissions go to a relay server we operate (Cloudflare Workers) and from there to our internal messaging tool (Slack). Attached photos are held in the relay server's storage (Cloudflare R2) and deleted automatically after 90 days. They are used only to read your feedback and investigate bugs — never for advertising or tracking — and are not shared with third parties. We keep them for at most one year and delete them once they are no longer needed. To request deletion, contact us at the address below.</p>
 
 <h2>Analytics and Crash Reporting</h2>
 <p>We use Google Firebase (Analytics and Crashlytics) to measure usage and crashes so we can improve the app.</p>
